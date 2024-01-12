@@ -13,7 +13,7 @@ spec:
           - /bin/sh
           - "-c"
           - while true ; do echo "[INFO] Mensaje cada 1d >>" $(date); sleep 1d; done;
-        image: "busybox:latest"
+        image: "quay.io/quay/busybox:latest"
         ports:
         - containerPort: 80
         envFrom:
