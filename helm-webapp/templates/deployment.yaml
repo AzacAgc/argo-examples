@@ -17,7 +17,7 @@ spec:
         tier: frontend
     spec: # Pod spec
       nodeSelector:
-        openshift.io/node-selector: type=compute
+        region: app
       containers:
       - name: mycontainer
         image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
